@@ -476,10 +476,10 @@ mark,
 }
 
 .img-thumbnail {
-  padding: 0.25rem;
+  padding: 0.50rem;
   background-color: #fff;
   border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
+  border-radius: 2rem;
   max-width: 100%;
   height: auto;
 }
@@ -11505,6 +11505,7 @@ pre {
 }
 
 .header .container .img-holder img {
+  height: 80%;
   width: 100%;
   max-width: 620px;
   -webkit-filter: drop-shadow(0 -4px 20px rgba(206, 212, 218, 0.4));
