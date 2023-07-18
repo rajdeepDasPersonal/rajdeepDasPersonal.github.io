@@ -44,50 +44,6 @@ body{
 
 }
 
-/* Nav Hover */
-.nav-item {
-    position: relative;
-    display: block;
-    cursor: pointer;
-    padding: 8px 0;
-    color: #fff;
-    text-decoration: none;
-  }
-.nav-item:hover{
-    color: #fff;
-    text-decoration: none;
-}
-  
-.nav-item:before, a:after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: 8px;
-    background: #0d6efd;
-}
-  
-.nav-item:before {
-    left: 0;
-}
-.nav-item:after {
-    right: 0;
-    background: #fff;
-    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-  
-.nav-item:hover:before {
-    background: #0d6efd;
-    width: 100%;
-    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-  
-.nav-item:hover:after {
-    background: transparent;
-    width: 100%;
-    transition: 0s;
-}
-
 /* Button */
 .btn{
     height: 40px;
@@ -172,7 +128,7 @@ body{
     color: #0d6efd;
     border-radius: 4rem;
     padding: 0 1rem;
-    margin: .5rem .5rem 0 0;
+    margin: 1rem .5rem 0 0;
     font-weight: 400;
     border: 1px solid #0d6dfd22;
 }
@@ -181,7 +137,16 @@ body{
 #contact .img-fluid{
     max-height: 300px;
 }
-
+#contact .icon{
+    display: inline-block;
+    background: #0d6dfd22;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    color: #0d6dfd;
+    padding: 8px;
+    margin: 0 .8rem 0 0;
+}
 
 /* Rresponsive Css */
 @media screen and (min-width:480px){
@@ -198,6 +163,50 @@ body{
     .homeBtn{
         display: flex;
     }
+
+    /* Nav Hover */
+.nav-item {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+  }
+.nav-item:hover{
+    color: #fff;
+    text-decoration: none;
+}
+  
+.nav-item:before, a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 8px;
+    background: #0d6efd;
+}
+  
+.nav-item:before {
+    left: 0;
+}
+.nav-item:after {
+    right: 0;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+  
+.nav-item:hover:before {
+    background: #0d6efd;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+  
+.nav-item:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
 }
 
 @media screen and (max-width:480px){

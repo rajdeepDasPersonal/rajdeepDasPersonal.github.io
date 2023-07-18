@@ -11,6 +11,7 @@ const hidePreloader = () => {
 
 window.addEventListener("load", hidePreloader);
 
+
 // Profile Image
 const borderRadiusValues = ['74% 26% 44% 56% / 39% 60% 40% 61% ', 
                             '74% 26% 20% 80% / 68% 60% 40% 32% ', 
@@ -29,4 +30,9 @@ profileImage.addEventListener('click', () => {
   const randomBorderRadius = borderRadiusValues[randomIndex];
   profileImage.style.borderRadius = randomBorderRadius;
 });
+
+// Footer 
+const d = new Date();
+let year = d.getFullYear();
+document.querySelector(".year").innerHTML = year;
 
