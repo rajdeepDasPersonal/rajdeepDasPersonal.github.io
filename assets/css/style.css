@@ -25,14 +25,67 @@ body{
     box-shadow: none;
     border:none;
 }
+/* NavBar Brand */
+.navbar-brand{
+    position: relative;
+}
+.navbar-brand::before{
+    display: inline-block;
+    content: '';
+    position: absolute;
+    height:2rem;
+    width: 2rem;
+    border-radius: 100%;
+    background: #0d6efd;
+    opacity: .1;
+    top:10px;
+    left: 20px;
+
+
+}
 
 /* Nav Hover */
-.nav-item:active,
-.nav-item:hover,
-.nav-item:focus{
-    border-bottom:2px solid var(--bs-primary);
+.nav-item {
     position: relative;
-    top: 5px;
+    display: block;
+    cursor: pointer;
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+  }
+.nav-item:hover{
+    color: #fff;
+    text-decoration: none;
+}
+  
+.nav-item:before, a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 8px;
+    background: #0d6efd;
+}
+  
+.nav-item:before {
+    left: 0;
+}
+.nav-item:after {
+    right: 0;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+  
+.nav-item:hover:before {
+    background: #0d6efd;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+  
+.nav-item:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
 }
 
 /* Button */
@@ -55,19 +108,35 @@ body{
     border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;
     /* border-radius: 100%; */
     border: 15px solid var(--bs-white);
-    opacity: .8;
+    opacity: .9;
+    transition: border-radius 0.5s ease;
+    cursor: pointer;
 }
 
-/* Title */
-.title::after{
+/* About section */
+#about h2{
+    margin: 0 0 0 -4px;
+    font-size: 3rem;
+    position: relative;
+}
+
+#about h2::before{
     display: inline-block;
     content: '';
-    height: .5px;
-    width: 25px;
-    background:var(--bs-primary);
-    position: relative;
-    left: 10px;
-    top: -10px;
+    height: 1rem;
+    width: 3rem;
+    border-bottom:2px solid var(--bs-primary);
+    position: absolute;
+    left:4px;
+    bottom: 0px;
+}
+#about p.abt{
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+#about p{
+    margin-top: 1.5rem;
 }
 
 /* Preloader */
