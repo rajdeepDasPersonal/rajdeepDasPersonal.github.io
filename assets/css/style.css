@@ -62,7 +62,6 @@ body{
     height:auto;
     width: auto;
     border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;
-    /* border-radius: 100%; */
     border: 15px solid var(--bs-white);
     opacity: .9;
     transition: border-radius 0.5s ease;
@@ -139,7 +138,7 @@ body{
 }
 #contact .icon{
     display: inline-block;
-    background: #0d6dfd22;
+    background: #0d6dfd0e;
     height: 2rem;
     width: 2rem;
     border-radius: 100%;

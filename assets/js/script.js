@@ -16,6 +16,7 @@ window.addEventListener("load", hidePreloader);
 const borderRadiusValues = ['74% 26% 44% 56% / 39% 60% 40% 61% ', 
                             '74% 26% 20% 80% / 68% 60% 40% 32% ', 
                             '32% 68% 26% 74% / 68% 30% 70% 32% ',
+                            '30% 70% 70% 30% / 30% 30% 70% 70%'
                             ];
 const profileImage = document.querySelector('.profile');
 
