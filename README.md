@@ -1,1 +1,2 @@
-# rajdeepDasPersonal.github.io
+<h1>Description</h1>
+<p>This is a portfolio website created with HTML, CSS, JavaScript, Bootstrap, and AOS framework by <a href="https://owlbunt.github.io">OwlBunt</a>. This code is publicly available, and you can use it for your personal use. However, please make sure to give proper credit.</p>
